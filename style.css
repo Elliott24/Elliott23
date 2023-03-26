@@ -4,21 +4,22 @@
   --background-white: white;
   --background-dark: #222;
 }
-body:not(.dark) {
-  --text: black;
-  /* background-color: var(--background-white); */
+html:not(.dark) {
+  --text: white;
+  --background-color: var(--background-white);
 }
 
-body.dark {
-  background: var( --background-dark);
+html.dark {
+  --background-color: var( --background-dark);
   --text: white;
 }
 html {
   height: 100%;
   width: 100%;
-    background-image: linear-gradient(to right, transparent 20%, var(--background-white) 60% ), url('bd86goc4fhvenj72.jpg');
+    background-image: url('bd86goc4fhvenj72.jpg');
   font-family: 'Rubik', monospace;
   background-size: cover;
+  color: var(--text);
 }
 /* *{
   outline: 1px red solid;
@@ -27,12 +28,11 @@ html {
   height: 100%;
   width: 45%;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   top: 0;
   overflow-x: hidden;
   padding-top: 20px;
   text-align: center;
-  background-color: var(--background);
   color: var(--text);
 }
 .right {
