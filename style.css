@@ -1,4 +1,69 @@
+:root{
+  --accent-color-: #4022d3;
+}
+body:not(.dark) {
+  --background: white;
+  --text: black;
+}
+
+body.dark {
+  --background: #222;
+  --text: white;
+}
 html {
   height: 100%;
   width: 100%;
+  background-image: linear-gradient(to right, transparent 20%, var(--background) 60% ), url('bd86goc4fhvenj72.jpg');
+  font-family: 'Rubik', monospace;
+  background-size: cover;
+}
+/* *{
+  outline: 1px red solid;
+} */
+.split {
+  height: 100%;
+  width: 40%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+  text-align: center;
+  background-color: var(--background);
+  color: var(--text);
+}
+.right {
+  right: 0;
+  background-color: var(--background);
+}
+h1{
+  font-size: 7.4em;
+  font-weight: 800;
+}
+.icons{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-left: 40%;
+  width: 136px;
+}
+.fa-solid{
+  color: var(--text) !important;
+}
+.fa-solid:hover{
+  content: '';
+  color: var(--accent-color-) !important;
+  cursor: pointer;
+}
+.mobile{
+  display: none;
+}
+@media screen and (max-width: 678px) {
+  body{
+    display: none;
+  }
+  .mobile{
+    display: block !important;
+    color: #fff;
+  }
 }
