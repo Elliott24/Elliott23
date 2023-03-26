@@ -13,7 +13,7 @@ body.dark {
 html {
   height: 100%;
   width: 100%;
-  background-image: linear-gradient(to right, transparent 20%, var(--background) 60% ), url('bd86goc4fhvenj72.jpg');
+  background-image: linear-gradient(to right, transparent 20%, #222 60% ), url('bd86goc4fhvenj72.jpg');
   font-family: 'Rubik', monospace;
   background-size: cover;
 }
