@@ -5,3 +5,6 @@ dark_prefered.addEventListener("change", () => {
   if(dark_prefered.matches) document.body.classList.add("dark")
   else document.body.classList.remove("dark")
 })
+
+
+ AOS.init();
