@@ -16,11 +16,12 @@ html.dark {
 html {
   height: 100%;
   width: 100%;
-    background-image: url('bd86goc4fhvenj72.jpg');
+    background-image: url('backgrounds/bd86goc4fhvenj72.jpg');
   font-family: 'Rubik', monospace;
   background-size: cover;
   color: var(--text);
   scroll-behavior: smooth;
+  background-attachment: fixed;
 }
 /* *{
   outline: 1px red solid;
@@ -38,6 +39,10 @@ html {
 }
 .right {
   right: 0;
+  background-color: var(--background);
+}
+.left{
+  left: 0;
   background-color: var(--background);
 }
 h1{
@@ -71,9 +76,6 @@ h1{
     color: #fff;
   }
 }
-/* *{
-  outline: 1px red solid;
-} */
 #projects{
   position: absolute;
   top: 100%;
@@ -122,4 +124,63 @@ a:hover{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+#aboutme{
+  position: absolute;
+  top: 200%;
+  width: 50%;
+}
+#aboutme h1{
+  font-size: 4em;
+   background-image: linear-gradient(to bottom right,  #ffffff, #00c7fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.text-container{
+  width: 80%;
+  height: 50%;
+  background-color: #222;
+  border-radius: 10px;
+  padding: 10px;
+}
+/* *{
+  outline: 1px red solid;
+} */
+#contact{
+  position: absolute;
+  top: 300%;
+}
+#contact h1{
+  font-size: 4em;
+   background-image: linear-gradient(to bottom right,  #ffffff, #00c7fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.contact-cards{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-left: 35%;
+}
+.contact-card{
+  width: 10rem;
+  height: 5rem;
+  background-color: #222;
+  color: #fff !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 5px;
+  transition: all .2s ease-in;
+}
+.contact-card a{
+  color: #fff;
+}
+.contact-card:hover{
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  box-shadow: 0px 0px 20px #7a7a7a;
 }
